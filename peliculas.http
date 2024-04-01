@@ -1,0 +1,53 @@
+GET https://localhost:7227/api/peliculas
+
+###
+
+GET https://localhost:7227/api/peliculas?s=Dun
+
+###
+
+GET https://localhost:7227/api/peliculas/2
+
+###
+
+POST https://localhost:7227/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Película de prueba",
+    "sinopsis": "Sinopsis de prueba.",
+    "anio": 2024,
+    "poster": "Sin poster",
+    "categorias": [2, 3]
+}
+
+###
+
+PUT https://localhost:7227/api/peliculas/16
+Content-Type: application/json
+
+{
+    "peliculaid": 16,
+    "titulo": "Paw Patrol: La Súper Película",
+    "sinopsis": "Un meteorito mágico aterriza en Adventure City y otorga superpoderes a los cachorros de PAW Patrol, convirtiéndolos en The Mighty Pups.",
+    "anio": 2024,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGI4NTNlODItMGJlZi00OTIwLTlkM2ItMWFkZjJhZDIzMDc3XkEyXkFqcGdeQXVyMTEyNzQ1MTk0._V1_SX300.jpg",
+    "categorias": [1, 2, 3]
+}
+
+###
+
+POST https://localhost:7227/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Regreso al futuro",
+    "sinopsis": "Marty McFly, un estudiante de secundaria de 17 años, es enviado accidentalmente treinta años al pasado en un DeLorean que viaja en el tiempo, inventado por su gran amigo, el excéntrico científico Doc Brown.",
+    "anio": 1985,
+    "poster": "https://es.web.img3.acsta.net/medias/nmedia/18/79/64/98/19512261.jpg",
+    "categorias": [8]
+}
+
+###
+
+DELETE https://localhost:7227/api/peliculas/16
